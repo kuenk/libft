@@ -1,0 +1,2 @@
+# libft
+libreria personalizada 
