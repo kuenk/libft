@@ -186,73 +186,73 @@ int	main(void)
  	printf("\n");
 
 
-//	//ft_memcmp
-//	printf("ft_memcmp\n");
-//	printf("Esta funcion compara dos bloques de memoria una cantidad 'n' de caracteres, y devueve\nun entero que es la diferencia en ASCII de los caracteres que no coincidan.\n");
-//	char *s1_memcmp = "Hola mundo";
-//	char *s2_memcmp = "Hola mondo";
-// 	printf("Al aplicar esta funcion, el resultado devuelto es %d.\n", ft_memcmp(s1_memcmp, s2_memcmp, 10));
-// 	printf("%d es la diferencia en ASCII entre el primer caracter diferente de las cadenas\n%s y %s.\n", ft_memcmp(s1, s2, 9), s1, s2);
-//	printf("La diferencia entre ft_strncmp y ft_memcmp es que ft_strncmp compara\nstr y ft_memcmp compara bloques de memoria, por lo que te vale para comparar\ndiferentes tipos de datos.\n");
-//	printf("\n");
-//	
-//	//ft_strnstr
-//	printf("ft_strnstr\n");
-//	printf("Esta funcion busca una subcadena (needle) dentro de una cadena\nmas grande(haystack) y devulve su posicion.\n");
-//	const char *haystack = "Esto es una cadena de ejemplo";
-//	const char *needle = "emp";
-//	size_t total_len = ft_strlen(haystack);
-//	printf("Mi haystack es: '%s'.\n", haystack);
-//	printf("Mi needle es: '%s'.\n", needle);
-//	printf("Subcadena encontrada en la posicion %ld.\n", ft_strnstr(haystack, needle, total_len) - haystack);
-//	printf("\n");
+	//ft_memcmp
+	printf("ft_memcmp\n");
+	printf("Esta funcion compara dos bloques de memoria una cantidad 'n' de caracteres, y devueve\nun entero que es la diferencia en ASCII de los caracteres que no coincidan.\n");
+	char *s1_memcmp = "Hola mundo";
+	char *s2_memcmp = "Hola mondo";
+ 	printf("Al aplicar esta funcion, el resultado devuelto es %d.\n", ft_memcmp(s1_memcmp, s2_memcmp, 10));
+ 	printf("%d es la diferencia en ASCII entre el primer caracter diferente de las cadenas\n%s y %s.\n", ft_memcmp(s1, s2, 9), s1, s2);
+	printf("La diferencia entre ft_strncmp y ft_memcmp es que ft_strncmp compara\nstr y ft_memcmp compara bloques de memoria, por lo que te vale para comparar\ndiferentes tipos de datos.\n");
+	printf("\n");
+	
+	//ft_strnstr
+	printf("ft_strnstr\n");
+	printf("Esta funcion busca una subcadena (needle) dentro de una cadena\nmas grande(haystack) y devulve su posicion.\n");
+	const char *haystack = "Esto es una cadena de ejemplo";
+	const char *needle = "emp";
+	size_t total_len = ft_strlen(haystack);
+	printf("Mi haystack es: '%s'.\n", haystack);
+	printf("Mi needle es: '%s'.\n", needle);
+	printf("Subcadena encontrada en la posicion %ld.\n", ft_strnstr(haystack, needle, total_len) - haystack);
+	printf("\n");
+
+	//ft_atoi
+	printf("ft_atoi\n");
+	printf("Esta funcion convierte un str a un int.\n");
+	const char *str_atoi = "27031991";
+	printf("El valor entero de la str %s es %d.\n", str_atoi, ft_atoi(str_atoi));
+	printf("\n");
 //
-//	//ft_atoi
-//	printf("ft_atoi\n");
-//	printf("Esta funcion convierte un str a un int.\n");
-//	const char *str_atoi = "27031991";
-//	printf("El valor entero de la str %s es %d.\n", str_atoi, ft_atoi(str_atoi));
-//	printf("\n");
-//
-//	//ft_calloc
-//	printf("ft_calloc\n");
-//	printf("Esta funcion sirve para asignar dinámicamente memoria en el montón\n(heap) e inicializarla con ceros. Esta funcion se utiliza comúnmente para asignar\nmemoria para arreglos de elementos del mismo tipo.\n");
-//	int *array_calloc;
-//	int n_calloc = 5;
-//	int i_calloc = 0;
-//	array_calloc = (int *)ft_calloc(n_calloc, sizeof(int));
-//	if (array_calloc == NULL)
-//	{
-//		printf("La asignacion de memoria ha fallado\n");
-//		return (1);
-//	}
-//	printf("Imprimimos los elementos del array (que deberian ser ceros).\n");
-//	while (i_calloc < n_calloc)
-//	{
-//		printf("%d ", array_calloc[i_calloc]);
-//		i_calloc++;
-//	}
-//	printf("\n");
-//	printf("Es importante liberar la memoria asignada con la funcion free.\n");
-//	free(array_calloc);
-//	printf("\n");
-//
-//	//ft_strdup
-//	printf("ft_strdup\n");
-//	printf("Esta funcion se utiliza para duplicar una cadena de caracteres\n(string) dada. La función ft_strdup toma como argumento un puntero a una cadena de\ncaracteres (const char *s1) y devuelve un nuevo puntero a una cadena duplicada que es\nuna copia de la cadena original.\n");
-//	const char *original = "Hola mundo";
-//	char *duplicated = ft_strdup(original);
-//	if (duplicated == NULL)
-//	{
-//		printf("La asignacion de memoria ha fallado.\n");
-//		return (1);
-//	}
-//	printf("Cadena original: %s\n", original);
-//  printf("Cadena duplicada: %s\n", duplicated);
-//	printf("Es importante liberar la memoria asignada con la funcion free.\n");
-//	free(duplicated);
-//	printf("\n");
-//
+	//ft_calloc
+	printf("ft_calloc\n");
+	printf("Esta funcion sirve para asignar dinámicamente memoria en el montón\n(heap) e inicializarla con ceros. Esta funcion se utiliza comúnmente para asignar\nmemoria para arreglos de elementos del mismo tipo.\n");
+	int *array_calloc;
+	int n_calloc = 5;
+	int i_calloc = 0;
+	array_calloc = (int *)ft_calloc(n_calloc, sizeof(int));
+	if (array_calloc == NULL)
+	{
+		printf("La asignacion de memoria ha fallado\n");
+		return (1);
+	}
+	printf("Imprimimos los elementos del array (que deberian ser ceros).\n");
+	while (i_calloc < n_calloc)
+	{
+		printf("%d ", array_calloc[i_calloc]);
+		i_calloc++;
+	}
+	printf("\n");
+	printf("Es importante liberar la memoria asignada con la funcion free.\n");
+	free(array_calloc);
+	printf("\n");
+
+	//ft_strdup
+	printf("ft_strdup\n");
+	printf("Esta funcion se utiliza para duplicar una cadena de caracteres\n(string) dada. La función ft_strdup toma como argumento un puntero a una cadena de\ncaracteres (const char *s1) y devuelve un nuevo puntero a una cadena duplicada que es\nuna copia de la cadena original.\n");
+	const char *original = "Hola mundo";
+	char *duplicated = ft_strdup(original);
+	if (duplicated == NULL)
+	{
+		printf("La asignacion de memoria ha fallado.\n");
+		return (1);
+	}
+	printf("Cadena original: %s\n", original);
+  	printf("Cadena duplicada: %s\n", duplicated);
+	printf("Es importante liberar la memoria asignada con la funcion free.\n");
+	free(duplicated);
+	printf("\n");
+
 //	//ft_substr
 //	printf("ft_substr\n");
 //	printf("Esta función se utiliza para crear una nueva cadena (un substring)\na partir de una cadena de entrada.\n");

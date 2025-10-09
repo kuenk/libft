@@ -6,7 +6,7 @@
 /*   By: dcuenca <dcuenca@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 23:31:30 by dcuenca           #+#    #+#             */
-/*   Updated: 2025/10/05 02:26:15 by dcuenca          ###   ########.fr       */
+/*   Updated: 2025/10/07 21:29:09 by dcuenca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,11 @@ char *ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 int ft_strncmp(const char *str1, const char *str2, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
+int	ft_memcmp(const void *s1, const void *s2, size_t n);
+char *ft_strnstr(const char *haystack, const char *needle, size_t len);
+int ft_atoi(const char *str);
+void    *ft_calloc(size_t num, size_t size);
+char	*ft_strdup(const char *s);
 
 
 #endif
