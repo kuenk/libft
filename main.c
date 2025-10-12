@@ -10,48 +10,53 @@ int	main(void)
  	printf("\n");
  	printf("ft_isalpha\n");
  	printf("Esta funcion devuelve un 1 si el char es una letra y un 0 si no.\n");
- 	printf("Para un caracter 'a', el resultado es %d\n", ft_isalpha('a'));
- 	printf("Para un caracter 'A', el resultado es %d\n", ft_isalpha('A'));
- 	printf("Para un caracter '$', el resultado es %d\n", ft_isalpha('$'));
+ 	printf("Para un caracter 'a', el resultado es %d OK\n ", ft_isalpha('a'));
+ 	printf("Para un caracter 'A', el resultado es %d OK\n ", ft_isalpha('A'));
+ 	printf("Para un caracter '$', el resultado es %d ko\n ", ft_isalpha('$'));
+ 	printf("Para un caracter '0', el resultado es %d ko\n ", ft_isalpha('0'));
+ 	printf("Para un caracter '\n', el resultado es %d ko\n ", ft_isalpha('\n'));
  	printf("\n");
 
  	//ft_isdigit
  
  	printf("ft_isdigit\n");
  	printf("Esta funcion devuelve un 1 si el char es un numero y un 0 si no.\n");
- 	printf("Para un caracter '1', el resultado es %d\n", ft_isdigit('1'));
- 	printf("Para un caracter '5', el resultado es %d\n", ft_isdigit('5'));
- 	printf("Para un caracter 'a', el resultado es %d\n", ft_isdigit('a'));
+ 	printf("Para un caracter '1', el resultado es %d OK\n ", ft_isdigit('1'));
+ 	printf("Para un caracter '5', el resultado es %d OK\n ", ft_isdigit('5'));
+ 	printf("Para un caracter 'a', el resultado es %d ko\n ", ft_isdigit('a'));
+ 	printf("Para un caracter ' ', el resultado es %d ko\n ", ft_isdigit(' '));
  	printf("\n");
  
  	//ft_isalnum
  	
  	printf("ft_isalnum\n");
  	printf("Esta funcion devuelve un 1 si el char es alfanumerico y un 0 si no.\n");
- 	printf("Para un caracter '1', el resultado es %d\n", ft_isalnum('1'));
- 	printf("Para un caracter 'a', el resultado es %d\n", ft_isalnum('a'));
- 	printf("Para un caracter 'Z', el resultado es %d\n", ft_isalnum('Z'));
- 	printf("Para un caracter '$', el resultado es %d\n", ft_isalnum('$'));
+ 	printf("Para un caracter '1', el resultado es %d OK\n ", ft_isalnum('1'));
+ 	printf("Para un caracter 'a', el resultado es %d OK\n ", ft_isalnum('a'));
+ 	printf("Para un caracter 'Z', el resultado es %d OK\n ", ft_isalnum('Z'));
+ 	printf("Para un caracter '#', el resultado es %d ko\n ", ft_isalnum('#'));
+ 	printf("Para un caracter '\t', el resultado es %d ko\n ", ft_isalnum('\t'));
  	printf("\n");
  
  	//ft_isascii
  	
  	printf("ft_isascii\n");
  	printf("Esta funcion devuelve un 1 si el char pertence a la tabla ASCII y\nun 0 si no.\n");
- 	printf("Para un caracter '1', el resultado es %d\n", ft_isascii('1'));
- 	printf("Para un caracter 'a', el resultado es %d\n", ft_isascii('a'));
- 	printf("Para un caracter 'Z', el resultado es %d\n", ft_isascii('Z'));
- 	printf("Para un caracter '$', el resultado es %d\n", ft_isascii('$'));
- 	printf("Para un caracter 128, el resultado es %d\n", ft_isascii(128));
+ 	printf("Para el ascii 0, el resultado es %d OK\n", ft_isascii(0));
+ 	printf("Para el ascii 127, el resultado es %d OK\n ", ft_isascii(127));
+ 	printf("Para el ascii 128, el resultado es %d ko\n ", ft_isascii(128));
+ 	printf("Para el ascii 250, el resultado es %d ko\n ", ft_isascii(255));
+ 	printf("Para un caracter -1, el resultado es %d ko\n ", ft_isascii(-1));
  	printf("\n");
  
 	//ft_isprint
 	
 	printf("ft_isprint\n");
 	printf("Esta funcion devuelve un 1 si el char es imprimible y un 0 si no.\n");
-	printf("Para un caracter '1', el resultado es %d\n", ft_isprint('1'));
-	printf("Para un caracter 'a', el resultado es %d\n", ft_isprint('a'));
-	printf("Para un caracter 10 , el resultado es %d\n", ft_isprint(10));
+	printf("Para un caracter ' ', el resultado es %d OK\n ", ft_isprint(' '));
+	printf("Para un caracter 'a', el resultado es %d OK\n ", ft_isprint('a'));
+	printf("Para el ascii 127, el resultado es %d ko\n ", ft_isprint(10));
+	printf("Para un caracter '\n', el resultado es %d ko\n ", ft_isprint('\n'));
 	printf("\n");
 
 	//ft_strlen
@@ -61,6 +66,8 @@ int	main(void)
 	printf("Esta funcion devulve la longitud de un str.\n");
 	str = "Hola mundo";
 	printf("El str es %s y su longitud es %zu caracteres\n", str, ft_strlen(str));
+	//str= "\n";
+	//printf("El str es un '\n' y su longitud es %zu caracteres\n", str, ft_strlen(str));
 	printf("\n");
 
 	//ft_memset
