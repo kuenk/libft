@@ -6,7 +6,7 @@
 /*   By: dcuenca <dcuenca@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 10:40:36 by dcuenca           #+#    #+#             */
-/*   Updated: 2025/10/03 22:24:34 by dcuenca          ###   ########.fr       */
+/*   Updated: 2025/10/09 21:12:33 by dcuenca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_isdigit(int n)
 {
 	if (n >= '0' && n <= '9')
-        return (1);
-    else
-        return (0);
+		return (1);
+	else
+		return (0);
 }

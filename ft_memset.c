@@ -6,7 +6,7 @@
 /*   By: dcuenca <dcuenca@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 19:36:54 by dcuenca           #+#    #+#             */
-/*   Updated: 2025/10/02 21:25:31 by dcuenca          ###   ########.fr       */
+/*   Updated: 2025/10/09 21:24:05 by dcuenca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memset(void *str, int c, size_t n)
 {
-	size_t		i;
+	size_t			i;
 	unsigned char	*ptr;
 
 	ptr = (unsigned char *)str;

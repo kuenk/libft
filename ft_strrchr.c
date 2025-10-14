@@ -6,7 +6,7 @@
 /*   By: dcuenca <dcuenca@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/04 11:30:44 by dcuenca           #+#    #+#             */
-/*   Updated: 2025/10/05 01:06:44 by dcuenca          ###   ########.fr       */
+/*   Updated: 2025/10/12 19:25:27 by dcuenca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,18 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
+    char    *ocurrence;
+
+    ocurrence = NULL;
 	while(*s != '\0')
 	{
     	if(*s == c)
-        	return((char *)s);
+        	ocurrence =(char *)s;
     	s++;
 	}
-	if(*s == '\0')
-    	return((char *)s);
-	return 0;
+	if(c == '\0')
+       	return((char *)s);
+	return (ocurrence);
 
 
 

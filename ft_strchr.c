@@ -6,7 +6,7 @@
 /*   By: dcuenca <dcuenca@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/04 10:50:43 by dcuenca           #+#    #+#             */
-/*   Updated: 2025/10/04 11:30:01 by dcuenca          ###   ########.fr       */
+/*   Updated: 2025/10/12 19:22:27 by dcuenca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char *ft_strchr(const char *s, int c)
             return((char *)s);
         s++;
     }
-    if(*s == '\0')
+    if(*s == c)
         return((char *)s);
     return 0;
 }
