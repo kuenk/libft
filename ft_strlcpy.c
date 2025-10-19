@@ -6,7 +6,7 @@
 /*   By: dcuenca <dcuenca@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 19:40:13 by dcuenca           #+#    #+#             */
-/*   Updated: 2025/10/12 17:06:59 by dcuenca          ###   ########.fr       */
+/*   Updated: 2025/10/17 17:38:10 by dcuenca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t n)
 		{
 			dest[i] = src[i];
 			i++;
-		}		
+		}
 		dest[i] = '\0';
 	}
 	return (src_len);

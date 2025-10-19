@@ -6,7 +6,7 @@
 /*   By: dcuenca <dcuenca@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 21:10:21 by dcuenca           #+#    #+#             */
-/*   Updated: 2025/10/03 22:23:14 by dcuenca          ###   ########.fr       */
+/*   Updated: 2025/10/17 16:59:21 by dcuenca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
-    	return (c - 32);
+		return (c - 32);
 	else
-	    return (c);
+		return (c);
 }

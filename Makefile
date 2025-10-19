@@ -32,3 +32,10 @@ fclean: clean
 re: fclean all
 
 .PHONY : clean fclean re
+
+test: $(TARGET)
+	gcc $(CFLAGS) main.c -L. -lft -o test_program
+	./test_program
+	
+test_clean:
+	rm -f test_program

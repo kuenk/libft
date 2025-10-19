@@ -6,13 +6,13 @@
 /*   By: dcuenca <dcuenca@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 18:20:33 by dcuenca           #+#    #+#             */
-/*   Updated: 2025/10/12 12:21:03 by dcuenca          ###   ########.fr       */
+/*   Updated: 2025/10/17 17:01:10 by dcuenca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	s1_len;
 	size_t	i;

@@ -6,7 +6,7 @@
 /*   By: dcuenca <dcuenca@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 20:09:35 by dcuenca           #+#    #+#             */
-/*   Updated: 2025/10/16 21:26:10 by dcuenca          ###   ########.fr       */
+/*   Updated: 2025/10/17 18:24:40 by dcuenca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,10 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	if (lst != NULL && f != NULL)
 	{
-		while(lst != NULL)
+		while (lst != NULL)
 		{
 			f(lst->content);
-			lst=lst->next;
+			lst = lst->next;
 		}
 	}
 }

@@ -6,17 +6,17 @@
 /*   By: dcuenca <dcuenca@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 22:54:10 by dcuenca           #+#    #+#             */
-/*   Updated: 2025/10/16 21:01:37 by dcuenca          ###   ########.fr       */
+/*   Updated: 2025/10/17 18:37:43 by dcuenca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    ft_lstadd_front(t_list **list, t_list *new)
+void	ft_lstadd_front(t_list **list, t_list *new)
 {
-	if(new != NULL && list != NULL)
+	if (new != NULL && list != NULL)
 	{
-		new->next =  *list;
+		new->next = *list;
 		*list = new;
 	}
 }

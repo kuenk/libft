@@ -6,7 +6,7 @@
 /*   By: dcuenca <dcuenca@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 23:32:31 by dcuenca           #+#    #+#             */
-/*   Updated: 2025/10/03 22:40:52 by dcuenca          ###   ########.fr       */
+/*   Updated: 2025/10/17 20:40:36 by dcuenca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	size_t			i;
+	size_t				i;
 	unsigned char		*d;
 	const unsigned char	*s;
 

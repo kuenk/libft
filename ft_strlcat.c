@@ -6,7 +6,7 @@
 /*   By: dcuenca <dcuenca@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 22:14:01 by dcuenca           #+#    #+#             */
-/*   Updated: 2025/10/12 17:19:38 by dcuenca          ###   ########.fr       */
+/*   Updated: 2025/10/17 18:22:47 by dcuenca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,10 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	i = 0;
 	len_dst = 0;
 	len_src = ft_strlen(src);
-	while(dst[len_dst] && len_dst < dstsize)
+	while (dst[len_dst] && len_dst < dstsize)
 		len_dst++;
-
 	if (len_dst == dstsize)
-		return(dstsize + len_src);
+		return (dstsize + len_src);
 	while (src[i] != '\0' && (len_dst + i + 1) < dstsize)
 	{
 		dst[len_dst + i] = src[i];

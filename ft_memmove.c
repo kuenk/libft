@@ -6,7 +6,7 @@
 /*   By: dcuenca <dcuenca@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 23:32:35 by dcuenca           #+#    #+#             */
-/*   Updated: 2025/10/04 00:11:55 by dcuenca          ###   ########.fr       */
+/*   Updated: 2025/10/17 18:50:35 by dcuenca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,10 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	unsigned char	*d;
 	unsigned char	*s;
 
-	if (!dest && !src)
-		return (NULL);
 	d = (unsigned char *)dest;
 	s = (unsigned char *)src;
+	if (!dest && !src)
+		return (NULL);
 	if (d > s)
 	{
 		while (n > 0)

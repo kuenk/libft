@@ -6,7 +6,7 @@
 /*   By: dcuenca <dcuenca@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 20:01:28 by dcuenca           #+#    #+#             */
-/*   Updated: 2025/10/12 19:44:46 by dcuenca          ###   ########.fr       */
+/*   Updated: 2025/10/17 17:48:34 by dcuenca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,8 @@ static int	num_len(int n)
 	}
 	return (len);
 }
-char    *ft_itoa(int n)
+
+char	*ft_itoa(int n)
 {
 	int		len;
 	char	*str;

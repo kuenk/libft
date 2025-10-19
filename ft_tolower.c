@@ -6,7 +6,7 @@
 /*   By: dcuenca <dcuenca@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 19:31:40 by dcuenca           #+#    #+#             */
-/*   Updated: 2025/10/03 22:28:17 by dcuenca          ###   ########.fr       */
+/*   Updated: 2025/10/17 16:52:34 by dcuenca          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
-    	return (c + 32);
+		return (c + 32);
 	else
-	    return (c);
+		return (c);
 }
